@@ -1,0 +1,17 @@
+{
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    }, 
+    "type": "visualization", 
+    "updated_at": "2019-10-04T14:35:16.603Z", 
+    "visualization": {
+        "description": "", 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+        }, 
+        "title": "SN-Timelion-DNS/request/reply", 
+        "uiStateJSON": "{}", 
+        "version": 1, 
+        "visState": "{\"title\":\"SN-Timelion-DNS/request/reply\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(q='dns.type:query').label('DNS-request'), .es(q='dns.type:answer').label('DNS-reply')\",\"interval\":\"auto\"},\"aggs\":[]}"
+    }
+}

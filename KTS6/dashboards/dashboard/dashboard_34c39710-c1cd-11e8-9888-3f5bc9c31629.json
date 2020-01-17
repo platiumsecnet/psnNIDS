@@ -1,0 +1,22 @@
+{
+    "dashboard": {
+        "description": "", 
+        "hits": 0, 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+        }, 
+        "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true,\"hidePanelTitles\":false}", 
+        "panelsJSON": "[{\"gridData\":{\"x\":11,\"y\":0,\"w\":37,\"h\":9,\"i\":\"1\"},\"version\":\"6.4.1\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"id\":\"fab31360-c1c8-11e8-9888-3f5bc9c31629\",\"embeddableConfig\":{\"vis\":{\"legendOpen\":false}}},{\"gridData\":{\"x\":36,\"y\":25,\"w\":11,\"h\":14,\"i\":\"2\"},\"version\":\"6.4.1\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"id\":\"13b4a300-c1ca-11e8-9888-3f5bc9c31629\",\"embeddableConfig\":{}},{\"gridData\":{\"x\":24,\"y\":25,\"w\":12,\"h\":14,\"i\":\"3\"},\"version\":\"6.4.1\",\"panelIndex\":\"3\",\"type\":\"visualization\",\"id\":\"c8657640-c1c9-11e8-9888-3f5bc9c31629\",\"embeddableConfig\":{}},{\"gridData\":{\"x\":12,\"y\":25,\"w\":12,\"h\":14,\"i\":\"4\"},\"version\":\"6.4.1\",\"panelIndex\":\"4\",\"type\":\"visualization\",\"id\":\"fd1577f0-c1c9-11e8-9888-3f5bc9c31629\",\"embeddableConfig\":{}},{\"gridData\":{\"x\":0,\"y\":25,\"w\":12,\"h\":14,\"i\":\"5\"},\"version\":\"6.4.1\",\"panelIndex\":\"5\",\"type\":\"visualization\",\"id\":\"e41ad0b0-c1c9-11e8-9888-3f5bc9c31629\",\"embeddableConfig\":{}},{\"gridData\":{\"x\":0,\"y\":9,\"w\":48,\"h\":16,\"i\":\"18\"},\"version\":\"6.4.1\",\"panelIndex\":\"18\",\"type\":\"visualization\",\"id\":\"19f31700-c1d0-11e8-9888-3f5bc9c31629\",\"embeddableConfig\":{}},{\"gridData\":{\"x\":0,\"y\":0,\"w\":11,\"h\":9,\"i\":\"19\"},\"version\":\"6.4.1\",\"panelIndex\":\"19\",\"type\":\"visualization\",\"id\":\"7dbcee70-c2f5-11e8-9eb1-af8fa48f4c1b\",\"embeddableConfig\":{}},{\"gridData\":{\"x\":0,\"y\":69,\"w\":48,\"h\":25,\"i\":\"20\"},\"version\":\"6.4.2\",\"panelIndex\":\"20\",\"type\":\"search\",\"id\":\"2d3f4020-c1c8-11e8-9888-3f5bc9c31629\",\"embeddableConfig\":{}},{\"gridData\":{\"x\":0,\"y\":39,\"w\":24,\"h\":15,\"i\":\"21\"},\"version\":\"6.8.2\",\"panelIndex\":\"21\",\"type\":\"visualization\",\"id\":\"e0b36000-ed96-11e9-856a-2f75daa41b37\",\"embeddableConfig\":{}},{\"gridData\":{\"x\":24,\"y\":39,\"w\":24,\"h\":15,\"i\":\"22\"},\"version\":\"6.8.2\",\"panelIndex\":\"22\",\"type\":\"visualization\",\"id\":\"1b3da460-ed97-11e9-856a-2f75daa41b37\",\"embeddableConfig\":{}},{\"gridData\":{\"x\":0,\"y\":54,\"w\":24,\"h\":15,\"i\":\"23\"},\"version\":\"6.8.2\",\"panelIndex\":\"23\",\"type\":\"visualization\",\"id\":\"37b4a120-ed97-11e9-856a-2f75daa41b37\",\"embeddableConfig\":{}},{\"gridData\":{\"x\":24,\"y\":54,\"w\":24,\"h\":15,\"i\":\"24\"},\"version\":\"6.8.2\",\"panelIndex\":\"24\",\"type\":\"visualization\",\"id\":\"5428dec0-ed97-11e9-856a-2f75daa41b37\",\"embeddableConfig\":{}}]", 
+        "refreshInterval": {
+            "pause": true, 
+            "value": 0
+        }, 
+        "timeFrom": "now-30d", 
+        "timeRestore": true, 
+        "timeTo": "now", 
+        "title": "SMB", 
+        "version": 1
+    }, 
+    "type": "dashboard", 
+    "updated_at": "2019-10-13T08:57:03.007Z"
+}

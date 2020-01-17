@@ -1,0 +1,27 @@
+{
+    "search": {
+        "columns": [
+            "src_ip", 
+            "src_port", 
+            "dest_ip", 
+            "dest_port", 
+            "t38.data_type", 
+            "t38.message_type", 
+            "t38.indicator", 
+            "t38.transport"
+        ], 
+        "description": "", 
+        "hits": 0, 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"6731fa80-dee0-11e9-8b38-bbc335ba1a14\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+        }, 
+        "sort": [
+            "@timestamp", 
+            "desc"
+        ], 
+        "title": "T38-EventsList", 
+        "version": 1
+    }, 
+    "type": "search", 
+    "updated_at": "2019-10-06T09:51:23.461Z"
+}

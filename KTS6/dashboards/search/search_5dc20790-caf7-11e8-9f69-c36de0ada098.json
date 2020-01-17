@@ -1,0 +1,34 @@
+{
+    "search": {
+        "columns": [
+            "src_ip", 
+            "src_port", 
+            "dest_ip", 
+            "dest_port", 
+            "EveBox", 
+            "FPC", 
+            "krb5.cname", 
+            "in_iface", 
+            "krb5.encryption", 
+            "krb5.error_code", 
+            "krb5.failed_request", 
+            "krb5.msg_type", 
+            "krb5.realm", 
+            "krb5.sname", 
+            "krb5.weak_encryption"
+        ], 
+        "description": "", 
+        "hits": 0, 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"defa6c90-cae7-11e8-9f69-c36de0ada098\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+        }, 
+        "sort": [
+            "@timestamp", 
+            "desc"
+        ], 
+        "title": "KRB5-EventsList", 
+        "version": 1
+    }, 
+    "type": "search", 
+    "updated_at": "2019-10-13T02:38:12.423Z"
+}

@@ -1,0 +1,17 @@
+{
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    }, 
+    "type": "visualization", 
+    "updated_at": "2019-10-06T09:51:39.776Z", 
+    "visualization": {
+        "description": "", 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+        }, 
+        "title": "Timelion-ICMP-request-reply", 
+        "uiStateJSON": "{}", 
+        "version": 1, 
+        "visState": "{\"title\":\"Timelion-ICMP-request-reply\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(q='alert.signature_id:\\\"1234567\\\"').label('ICMP-request'), .es(q='alert.signature_id:1234568').label('ICMP-reply')\",\"interval\":\"auto\"},\"aggs\":[]}"
+    }
+}

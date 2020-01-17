@@ -1,0 +1,16 @@
+{
+    "dashboard": {
+        "description": "", 
+        "hits": 0, 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+        }, 
+        "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}", 
+        "panelsJSON": "[{\"embeddableConfig\":{},\"gridData\":{\"h\":9,\"i\":\"9\",\"w\":12,\"x\":0,\"y\":0},\"id\":\"ce6a0610-dee6-11e9-8b38-bbc335ba1a14h225ras\",\"panelIndex\":\"9\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":9,\"i\":\"10\",\"w\":36,\"x\":12,\"y\":0},\"id\":\"14345890-dee6-11e9-8b38-bbc335ba1a14h225ras\",\"panelIndex\":\"10\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"11\",\"w\":48,\"x\":0,\"y\":9},\"id\":\"6b1148d0-dee6-11e9-8b38-bbc335ba1a14h225ras\",\"panelIndex\":\"11\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":14,\"i\":\"12\",\"w\":12,\"x\":12,\"y\":24},\"id\":\"ed79a480-dee5-11e9-8b38-bbc335ba1a14h225ras\",\"panelIndex\":\"12\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":14,\"i\":\"13\",\"w\":12,\"x\":0,\"y\":24},\"id\":\"0001c0b0-dee6-11e9-8b38-bbc335ba1a14h225ras\",\"panelIndex\":\"13\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":14,\"i\":\"14\",\"w\":12,\"x\":24,\"y\":24},\"id\":\"26b744a0-dee6-11e9-8b38-bbc335ba1a14h225ras\",\"panelIndex\":\"14\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":14,\"i\":\"15\",\"w\":12,\"x\":36,\"y\":24},\"id\":\"3f075400-dee6-11e9-8b38-bbc335ba1a14h225ras\",\"panelIndex\":\"15\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":13,\"i\":\"16\",\"w\":48,\"x\":0,\"y\":38},\"id\":\"5f6da8d0-dee5-11e9-8b38-bbc335ba1a14\",\"panelIndex\":\"16\",\"type\":\"search\",\"version\":\"6.8.2\"}]", 
+        "timeRestore": false, 
+        "title": "H225Ras", 
+        "version": 1
+    }, 
+    "type": "dashboard", 
+    "updated_at": "2019-10-07T14:44:01.554Z"
+}

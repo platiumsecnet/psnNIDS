@@ -1,0 +1,16 @@
+{
+    "dashboard": {
+        "description": "", 
+        "hits": 0, 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+        }, 
+        "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}", 
+        "panelsJSON": "[{\"embeddableConfig\":{\"vis\":{\"legendOpen\":false}},\"gridData\":{\"h\":9,\"i\":\"7\",\"w\":38,\"x\":10,\"y\":0},\"id\":\"14345890-dee6-11e9-8b38-bbc335ba1a14\",\"panelIndex\":\"7\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"8\",\"w\":47,\"x\":1,\"y\":35},\"id\":\"a5426620-dee5-11e9-8b38-bbc335ba1a14\",\"panelIndex\":\"8\",\"type\":\"search\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":9,\"i\":\"9\",\"w\":10,\"x\":0,\"y\":0},\"id\":\"ce6a0610-dee6-11e9-8b38-bbc335ba1a14modbus\",\"panelIndex\":\"9\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":13,\"i\":\"11\",\"w\":12,\"x\":0,\"y\":9},\"id\":\"ed79a480-dee5-11e9-8b38-bbc335ba1a14modbus\",\"panelIndex\":\"11\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":13,\"i\":\"12\",\"w\":12,\"x\":12,\"y\":9},\"id\":\"26b744a0-dee6-11e9-8b38-bbc335ba1a14modbus\",\"panelIndex\":\"12\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":13,\"i\":\"13\",\"w\":12,\"x\":24,\"y\":9},\"id\":\"0001c0b0-dee6-11e9-8b38-bbc335ba1a14modbus\",\"panelIndex\":\"13\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":13,\"i\":\"14\",\"w\":12,\"x\":36,\"y\":9},\"id\":\"3f075400-dee6-11e9-8b38-bbc335ba1a14modbus\",\"panelIndex\":\"14\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":13,\"i\":\"16\",\"w\":13,\"x\":0,\"y\":22},\"id\":\"c1097b10-e06a-11e9-8b38-bbc335ba1a14modbusslave_unit_id\",\"panelIndex\":\"16\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":13,\"i\":\"17\",\"w\":14,\"x\":13,\"y\":22},\"id\":\"3bda4780-e81c-11e9-8b38-bbc335ba1a14\",\"panelIndex\":\"17\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":13,\"i\":\"18\",\"w\":19,\"x\":27,\"y\":22},\"id\":\"7486f240-e81c-11e9-8b38-bbc335ba1a14\",\"panelIndex\":\"18\",\"type\":\"visualization\",\"version\":\"6.8.2\"}]", 
+        "timeRestore": false, 
+        "title": "Modbus", 
+        "version": 1
+    }, 
+    "type": "dashboard", 
+    "updated_at": "2019-10-13T08:38:51.425Z"
+}

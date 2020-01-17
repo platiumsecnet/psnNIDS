@@ -1,0 +1,17 @@
+{
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    }, 
+    "type": "visualization", 
+    "updated_at": "2019-10-04T14:35:24.802Z", 
+    "visualization": {
+        "description": "", 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"logstash-alert-*\",\"query\":{\"query\":{\"query_string\":{\"query\":\"tls.issuerdn:* AND event_type: alert\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
+        }, 
+        "title": "SN-Alert-ByTlsIssuerdn", 
+        "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":\"table\",\"fill\":false}}}", 
+        "version": 1, 
+        "visState": "{\"title\":\"SN-Alert-ByTlsIssuerdn\",\"type\":\"pie\",\"params\":{\"shareYAxis\":true,\"addTooltip\":true,\"addLegend\":true,\"isDonut\":false,\"spyPerPage\":10},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"tls.issuerdn.keyword\",\"size\":10,\"order\":\"desc\",\"orderBy\":\"1\"}}],\"listeners\":{}}"
+    }
+}

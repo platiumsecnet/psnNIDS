@@ -1,0 +1,32 @@
+{
+    "search": {
+        "columns": [
+            "src_ip", 
+            "src_port", 
+            "dest_ip", 
+            "dest_port", 
+            "sip.from", 
+            "sip.to", 
+            "sip.sdp_media_port", 
+            "sip.sdp_media_format", 
+            "sip.sdp_media_proto", 
+            "sip.rtpmap", 
+            "sip.sdp_connection_addr", 
+            "sip.request_line", 
+            "sip.status_line"
+        ], 
+        "description": "", 
+        "hits": 0, 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"dde05290-dedf-11e9-8b38-bbc335ba1a14\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+        }, 
+        "sort": [
+            "@timestamp", 
+            "desc"
+        ], 
+        "title": "SIP-EventsList", 
+        "version": 1
+    }, 
+    "type": "search", 
+    "updated_at": "2019-10-06T09:51:26.516Z"
+}

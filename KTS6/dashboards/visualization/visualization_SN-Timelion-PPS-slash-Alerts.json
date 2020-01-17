@@ -1,0 +1,17 @@
+{
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    }, 
+    "type": "visualization", 
+    "updated_at": "2019-10-04T14:35:14.593Z", 
+    "visualization": {
+        "description": "", 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+        }, 
+        "title": "SN-Timelion-PPS/Alerts", 
+        "uiStateJSON": "{}", 
+        "version": 1, 
+        "visState": "{\"title\":\"SN-Timelion-PPS/Alerts\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(metric='avg:stats.capture.kernel_packets').derivative().bars().max(0).label('PPS') , .es(q='event_type:alert').label('ALERTS')\",\"interval\":\"auto\"},\"aggs\":[]}"
+    }
+}

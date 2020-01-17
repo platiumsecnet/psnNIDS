@@ -1,0 +1,23 @@
+{
+    "search": {
+        "columns": [
+            "src_ip", 
+            "src_port", 
+            "dest_ip", 
+            "dest_port"
+        ], 
+        "description": "", 
+        "hits": 0, 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"862ca190-dfb4-11e9-8b38-bbc335ba1a14\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+        }, 
+        "sort": [
+            "@timestamp", 
+            "desc"
+        ], 
+        "title": "POP-EventList", 
+        "version": 1
+    }, 
+    "type": "search", 
+    "updated_at": "2019-10-06T09:51:26.521Z"
+}

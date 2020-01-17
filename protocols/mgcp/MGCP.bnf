@@ -1,0 +1,367 @@
+MGCPMessage = MGCPCommand / MGCPResponse
+
+MGCPCommand = MGCPCommandLine 0*(MGCPParameter) [EOL *SDPinformation]
+
+MGCPCommandLine = MGCPVerb 1*(WSP) transaction-id 1*(WSP)
+                        endpointName 1*(WSP) MGCPversion EOL
+
+MGCPVerb = "EPCF" / "CRCX" / "MDCX" / "DLCX" / "RQNT"
+         / "NTFY" / "AUEP" / "AUCX" / "RSIP" / extensionVerb
+
+extensionVerb  = ALPHA 3(ALPHA / DIGIT) ; experimental starts with X
+
+transaction-id = 1*9(DIGIT)
+
+endpointName      = LocalEndpointName "@" DomainName
+LocalEndpointName = LocalNamePart 0*("/" LocalNamePart)
+LocalNamePart     = AnyName / AllName / NameString
+AnyName           = "$"
+AllName           = "*"
+NameString        = 1*(range-of-allowed-characters)
+; VCHAR except "$", "*", "/", "@"
+range-of-allowed-characters  = %x21-23 / %x25-29 / %x2B-2E
+                             / %x30-3F / %x41-7E
+
+DomainName = 1*255(ALPHA / DIGIT / "." / "-")    ; as defined
+           / "#" number                          ; in RFC 821
+           / "[" IPv4address / IPv6address "]"   ; see RFC 2373
+
+; Rewritten to ABNF from RFC 821
+number =  1*DIGIT
+
+;From RFC 2373
+IPv6address = hexpart [ ":" IPv4address ]
+IPv4address = 1*3DIGIT "." 1*3DIGIT "." 1*3DIGIT "." 1*3DIGIT
+
+; this production, while occurring in RFC2373, is not referenced
+; IPv6prefix  = hexpart "/" 1*2DIGIT
+hexpart = hexseq / hexseq "::" [ hexseq ] / "::" [ hexseq ]
+hexseq  = hex4 *( ":" hex4)
+hex4    = 1*4HEXDIG
+
+MGCPversion = "MGCP" 1*(WSP) 1*(DIGIT) "." 1*(DIGIT)
+                            [1*(WSP) ProfileName]
+ProfileName = VCHAR *( WSP / VCHAR)
+
+MGCPParameter = ParameterValue EOL
+
+; Check infoCode if more parameter values defined
+; Most optional values can only be omitted when auditing
+ParameterValue = ("K"  ":" 0*(WSP)  [ResponseAck])
+               / ("B"  ":" 0*(WSP)  [BearerInformation])
+               / ("C"  ":" 0*(WSP)  CallId)
+               / ("I"  ":" 0*(WSP)  [ConnectionId])
+               / ("N"  ":" 0*(WSP)  [NotifiedEntity])
+               / ("X"  ":" 0*(WSP)  [RequestIdentifier])
+               / ("L"  ":" 0*(WSP)  [LocalConnectionOptions])
+               / ("M"  ":" 0*(WSP)  ConnectionMode)
+               / ("R"  ":" 0*(WSP)  [RequestedEvents])
+               / ("S"  ":" 0*(WSP)  [SignalRequests])
+               / ("D"  ":" 0*(WSP)  [DigitMap])
+               / ("O"  ":" 0*(WSP)  [ObservedEvents])
+               / ("P"  ":" 0*(WSP)  [ConnectionParameters])
+               / ("E"  ":" 0*(WSP)  ReasonCode)
+               / ("Z"  ":" 0*(WSP)  [SpecificEndpointID])
+               / ("Z2" ":" 0*(WSP)  SecondEndpointID)
+               / ("I2" ":" 0*(WSP)  SecondConnectionID)
+               / ("F"  ":" 0*(WSP)  [RequestedInfo])
+               / ("Q"  ":" 0*(WSP)  QuarantineHandling)
+               / ("T"  ":" 0*(WSP)  [DetectEvents])
+               / ("RM" ":" 0*(WSP)  RestartMethod)
+               / ("RD" ":" 0*(WSP)  RestartDelay)
+               / ("A"  ":" 0*(WSP)  [Capabilities])
+               / ("ES" ":" 0*(WSP)  [EventStates])
+               / ("PL" ":" 0*(WSP)  [PackageList])    ; Auditing only
+               / ("MD" ":" 0*(WSP)  MaxMGCPDatagram)  ; Auditing only
+               / (extensionParameter ":" 0*(WSP) [parameterString])
+
+; A final response may include an empty ResponseAck
+ResponseAck =  confirmedTransactionIdRange
+               *( ","  0*(WSP) confirmedTransactionIdRange )
+
+confirmedTransactionIdRange = transaction-id ["-" transaction-id]
+
+
+BearerInformation = BearerAttribute 0*("," 0*(WSP) BearerAttribute)
+BearerAttribute   = ("e" ":" BearerEncoding)
+                  / (BearerExtensionName [":" BearerExtensionValue])
+BearerExtensionName  = PackageLCOExtensionName
+BearerExtensionValue = LocalOptionExtensionValue
+BearerEncoding = "A" / "mu"
+
+CallId = 1*32(HEXDIG)
+
+; The audit request response may include a list of identifiers
+ConnectionId = 1*32(HEXDIG) 0*("," 0*(WSP) 1*32(HEXDIG))
+SecondConnectionID = ConnectionId
+
+NotifiedEntity = [LocalName "@"] DomainName [":" portNumber]
+LocalName  = LocalEndpointName            ; No internal structure
+
+portNumber = 1*5(DIGIT)
+
+RequestIdentifier = 1*32(HEXDIG)
+
+LocalConnectionOptions = LocalOptionValue 0*(WSP)
+                           0*("," 0*(WSP) LocalOptionValue 0*(WSP))
+LocalOptionValue = ("p"  ":" packetizationPeriod)
+                 / ("a"  ":" compressionAlgorithm)
+                 / ("b"  ":" bandwidth)
+                 / ("e"  ":" echoCancellation)
+                 / ("gc" ":" gainControl)
+                 / ("s"  ":" silenceSuppression)
+                 / ("t"  ":" typeOfService)
+                 / ("r"  ":" resourceReservation)
+                 / ("k"  ":" encryptiondata)
+                 / ("nt" ":" ( typeOfNetwork /
+                                    supportedTypeOfNetwork))
+                 / (LocalOptionExtensionName
+                         [":" LocalOptionExtensionValue])
+
+Capabilities    =  CapabilityValue 0*(WSP)
+                     0*("," 0*(WSP) CapabilityValue 0*(WSP))
+CapabilityValue = LocalOptionValue
+                / ("v" ":" supportedPackages)
+                / ("m" ":" supportedModes)
+
+PackageList     = pkgNameAndVers 0*("," pkgNameAndVers)
+pkgNameAndVers  = packageName ":" packageVersion
+packageVersion  = 1*(DIGIT)
+
+packetizationPeriod  = 1*4(DIGIT) ["-" 1*4(DIGIT)]
+compressionAlgorithm = algorithmName 0*(";" algorithmName)
+
+
+algorithmName        = 1*(SuitableLCOCharacter)
+bandwidth            = 1*4(DIGIT) ["-" 1*4(DIGIT)]
+echoCancellation     = "on" / "off"
+gainControl          = "auto" / ["-"] 1*4(DIGIT)
+silenceSuppression   = "on" / "off"
+typeOfService        = 1*2(HEXDIG)     ; 1 hex only for capabilities
+resourceReservation  = "g" / "cl" / "be"
+
+;encryption parameters are coded as in SDP (RFC 2327)
+;NOTE: encryption key may contain an algorithm as specified in RFC 1890
+encryptiondata = ( "clear" ":" encryptionKey )
+               / ( "base64" ":" encodedEncryptionKey )
+               / ( "uri" ":" URItoObtainKey )
+               / ( "prompt" ) ; defined in SDP, not usable in MGCP!
+
+encryptionKey = 1*(SuitableLCOCharacter) / quotedString
+; See RFC 2045
+encodedEncryptionKey = 1*(ALPHA / DIGIT / "+" / "/" / "=")
+URItoObtainKey = 1*(SuitableLCOCharacter) / quotedString
+
+typeOfNetwork = "IN" / "ATM" / "LOCAL" / OtherTypeOfNetwork
+; Registered with IANA - see RFC 2327
+OtherTypeOfNetwork     = 1*(SuitableLCOCharacter)
+supportedTypeOfNetwork = typeOfNetwork *(";" typeOfNetwork)
+
+supportedModes    = ConnectionMode 0*(";" ConnectionMode)
+
+supportedPackages = packageName 0*(";" packageName)
+
+packageName = 1*(ALPHA / DIGIT / HYPHEN) ; Hyphen neither first or last
+
+LocalOptionExtensionName = VendorLCOExtensionName
+                         / PackageLCOExtensionName
+                         / OtherLCOExtensionName
+VendorLCOExtensionName   = "x" ("+"/"-") 1*32(SuitableExtLCOCharacter)
+PackageLCOExtensionName  = packageName "/"
+                            1*32(SuitablePkgExtLCOCharacter)
+; must not start with "x-" or "x+"
+OtherLCOExtensionName    = 1*32(SuitableExtLCOCharacter)
+
+LocalOptionExtensionValue = (1*(SuitableExtLCOValChar)
+                                                    / quotedString)
+                              *(";" (1*(SuitableExtLCOValChar)
+                                                      / quotedString))
+
+;Note: No "data" mode.
+ConnectionMode = "sendonly" / "recvonly" / "sendrecv"
+               / "confrnce" / "inactive" / "loopback"
+               / "conttest" / "netwloop" / "netwtest"
+               / ExtensionConnectionMode
+ExtensionConnectionMode = PkgExtConnectionMode
+PkgExtConnectionMode    = packageName "/" 1*(ALPHA / DIGIT)
+
+RequestedEvents = requestedEvent 0*("," 0*(WSP) requestedEvent)
+requestedEvent  = (eventName ["(" requestedActions ")"])
+                / (eventName "(" requestedActions ")"
+                                       "(" eventParameters ")" )
+eventName = [(packageName / "*") "/"]
+                (eventId / "all" / eventRange
+                                        / "*" / "#") ; for DTMF
+                              ["@" (ConnectionId / "$" / "*")]
+eventId = 1*(ALPHA / DIGIT / HYPHEN)   ; Hyphen neither first nor last
+eventRange = "[" 1*(DigitMapLetter / (DIGIT "-" DIGIT) /
+                        (DTMFLetter "-" DTMFLetter)) "]"
+DTMFLetter = "A" / "B" / "C" / "D"
+
+requestedActions = requestedAction 0*("," 0*(WSP) requestedAction)
+requestedAction  = "N" / "A" / "D" / "S" / "I" / "K"
+                 / "E" "(" EmbeddedRequest ")"
+                 / ExtensionAction
+ExtensionAction  = PackageExtAction
+PackageExtAction = packageName "/" Action ["(" ActionParameters ")"]
+Action           = 1*ALPHA
+ActionParameters = eventParameters        ; May contain actions
+
+;NOTE: Should tolerate different order when receiving, e.g., for NCS.
+EmbeddedRequest = (      "R" "(" EmbeddedRequestList ")"
+                    ["," 0*(WSP) "S" "(" EmbeddedSignalRequest ")"]
+                    ["," 0*(WSP) "D" "(" EmbeddedDigitMap ")"]      )
+                / (      "S" "(" EmbeddedSignalRequest ")"
+                    ["," 0*(WSP) "D" "(" EmbeddedDigitMap ")"] )
+                / (      "D" "(" EmbeddedDigitMap ")" )
+
+EmbeddedRequestList   = RequestedEvents
+EmbeddedSignalRequest = SignalRequests
+EmbeddedDigitMap = DigitMap
+
+SignalRequests   = SignalRequest 0*("," 0*(WSP) SignalRequest )
+SignalRequest    = eventName [ "(" eventParameters ")" ]
+
+eventParameters  = eventParameter 0*("," 0*(WSP) eventParameter)
+eventParameter   = eventParameterValue
+                 / eventParameterName "=" eventParameter
+                 / eventParameterName "(" eventParameters ")"
+eventParameterString = 1*(SuitableEventParamCharacter)
+eventParameterName   = eventParameterString
+eventParameterValue  = eventParameterString / quotedString
+
+DigitMap           = DigitString  / "(" DigitStringList ")"
+DigitStringList    = DigitString 0*( "|" DigitString )
+DigitString        = 1*(DigitStringElement)
+DigitStringElement = DigitPosition ["."]
+DigitPosition      = DigitMapLetter / DigitMapRange
+; NOTE "X" is now included
+DigitMapLetter     = DIGIT / "#" / "*" / "A" / "B" / "C" / "D" / "T"
+                   / "X" / ExtensionDigitMapLetter
+ExtensionDigitMapLetter = "E" / "F" / "G" / "H" / "I" / "J" / "K"
+                        / "L" / "M" / "N" / "O" / "P" / "Q" / "R"
+                        / "S" / "U" / "V" / "W" / "Y" / "Z"
+; NOTE "[x]" is now allowed
+DigitMapRange = "[" 1*DigitLetter "]"
+DigitLetter   = *((DIGIT "-" DIGIT) / DigitMapLetter)
+
+ObservedEvents = SignalRequests
+
+EventStates    = SignalRequests
+
+ConnectionParameters = ConnectionParameter
+                        0*( "," 0*(WSP) ConnectionParameter )
+
+ConnectionParameter  = ( "PS" "=" packetsSent )
+                     / ( "OS" "=" octetsSent )
+                     / ( "PR" "=" packetsReceived )
+                     / ( "OR" "=" octetsReceived )
+                     / ( "PL" "=" packetsLost )
+                     / ( "JI" "=" jitter )
+                     / ( "LA" "=" averageLatency )
+                     / ( ConnectionParameterExtensionName
+                              "=" ConnectionParameterExtensionValue )
+packetsSent     = 1*9(DIGIT)
+octetsSent      = 1*9(DIGIT)
+packetsReceived = 1*9(DIGIT)
+octetsReceived  = 1*9(DIGIT)
+packetsLost     = 1*9(DIGIT)
+jitter          = 1*9(DIGIT)
+averageLatency  = 1*9(DIGIT)
+
+ConnectionParameterExtensionName = VendorCPExtensionName
+                                 /    PackageCPExtensionName
+VendorCPExtensionName  = "X" "-" 2*ALPHA
+PackageCPExtensionName = packageName "/" CPName
+CPName = 1*(ALPHA / DIGIT / HYPHEN)
+ConnectionParameterExtensionValue = 1*9(DIGIT)
+MaxMGCPDatagram = 1*9(DIGIT)
+
+ReasonCode = 3DIGIT
+             [1*(WSP) "/" packageName]     ; Only for 8xx
+             [WSP 1*(%x20-7E)]
+
+SpecificEndpointID = endpointName
+SecondEndpointID   = endpointName
+
+RequestedInfo = infoCode 0*("," 0*(WSP) infoCode)
+
+infoCode = "B" / "C" / "I" / "N" / "X" / "L" / "M" / "R" / "S"
+         / "D" / "O" / "P" / "E" / "Z" / "Q" / "T" / "RC" / "LC"
+         / "A" / "ES" / "RM" / "RD" / "PL" / "MD" / extensionParameter
+
+QuarantineHandling = loopControl / processControl
+                   / (loopControl "," 0*(WSP) processControl )
+loopControl    = "step" / "loop"
+processControl = "process" / "discard"
+
+DetectEvents = SignalRequests
+
+RestartMethod = "graceful" / "forced" / "restart" / "disconnected"
+              / "cancel-graceful" / extensionRestartMethod
+extensionRestartMethod = PackageExtensionRM
+PackageExtensionRM     = packageName "/" 1*32(ALPHA / DIGIT / HYPHEN)
+RestartDelay = 1*6(DIGIT)
+
+extensionParameter = VendorExtensionParameter
+                   / PackageExtensionParameter
+                   / OtherExtensionParameter
+VendorExtensionParameter  = "X" ("-"/"+") 1*6(ALPHA / DIGIT)
+PackageExtensionParameter = packageName "/"
+                            1*32(ALPHA / DIGIT / HYPHEN)
+; must not start with "x-" or x+"
+OtherExtensionParameter   = 1*32(ALPHA / DIGIT / HYPHEN)
+
+;If first character is a double-quote, then it is a quoted-string
+parameterString = (%x21 / %x23-7F) *(%x20-7F) ; first and last must not
+                                              ; be white space
+                    / quotedString
+
+MGCPResponse = MGCPResponseLine 0*(MGCPParameter)
+                                        *2(EOL *SDPinformation)
+
+MGCPResponseLine = responseCode 1*(WSP) transaction-id
+                        [1*(WSP) "/" packageName]    ; Only for 8xx
+                             [WSP responseString] EOL
+responseCode = 3DIGIT
+responseString = *(%x20-7E)
+
+SuitablePkgExtLCOCharacter =  SuitableLCOCharacter
+
+SuitableExtLCOCharacter = DIGIT / ALPHA / "+" / "-" / "_" / "&"
+              / "!" / "'" / "|" / "=" / "#" / "?"
+              / "." / "$" / "*" /       "@" / "[" / "]"
+              / "^" / "`" / "{" / "}" / "~"
+
+SuitableLCOCharacter   = SuitableExtLCOCharacter / "/"
+
+SuitableExtLCOValChar  = SuitableLCOCharacter / ":"
+
+; VCHAR except """, "(", ")", ",", and "="
+SuitableEventParamCharacter = %x21 / %x23-27 / %x2A-2B
+                            / %x2D-3C / %x3E-7E
+
+; NOTE: UTF8 encoded
+quotedString  = DQUOTE 0*(quoteEscape / quoteChar) DQUOTE
+quoteEscape   = DQUOTE DQUOTE
+quoteChar = (%x00-21 / %x23-FF)
+
+EOL = CRLF / LF
+
+HYPHEN = "-"
+
+; See RFC 2327 for proper SDP grammar instead.
+SDPinformation = SDPLine CRLF *(SDPLine CRLF)        ; see RFC 2327
+SDPLine        = 1*(%x01-09 / %x0B / %x0C / %x0E-FF) ; for proper def.
+
+VCHAR          =  %x21-7E ; visible (printing) characters
+WSP             =  %x20 / %x09
+
+; B.1.  Core Rules ; RFC 4234 ABNF October 2005
+ALPHA          =  %x41-5A / %x61-7A   ; A-Z / a-z
+CR             =  %x0D ; carriage return
+CRLF           =  CR LF / LF / CR; modified to be forgiving on line ender
+DIGIT          =  %x30-39 ; 0-9
+DQUOTE         =  %x22 ; " (Double Quote)
+HEXDIG         =  DIGIT / "A" / "B" / "C" / "D" / "E" / "F"
+LF             =  %x0A ; linefeed

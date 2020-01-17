@@ -1,0 +1,17 @@
+{
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    }, 
+    "type": "visualization", 
+    "updated_at": "2019-10-06T09:51:37.734Z", 
+    "visualization": {
+        "description": "", 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        }, 
+        "title": "Timelion-host", 
+        "uiStateJSON": "{}", 
+        "version": 1, 
+        "visState": "{\"type\":\"timelion\",\"title\":\"Timelion-host\",\"params\":{\"expression\":\".es(q=\\\"event_type:alert\\\", split=\\\"host.keyword:10\\\").bars(width=4).label(regex=\\\".*:([^\\\\s]+).*\\\",label=\\\"$1\\\")\",\"interval\":\"auto\"}}"
+    }
+}

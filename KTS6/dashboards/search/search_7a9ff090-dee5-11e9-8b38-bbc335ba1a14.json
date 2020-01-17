@@ -1,0 +1,26 @@
+{
+    "search": {
+        "columns": [
+            "src_ip", 
+            "src_port", 
+            "dest_ip", 
+            "dest_port", 
+            "telnet.payload", 
+            "telnet.payload_to_server", 
+            "telnet.packageSize_to_server:"
+        ], 
+        "description": "", 
+        "hits": 0, 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"acf77590-dee0-11e9-8b38-bbc335ba1a14\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+        }, 
+        "sort": [
+            "@timestamp", 
+            "desc"
+        ], 
+        "title": "Telnet-EventsList", 
+        "version": 1
+    }, 
+    "type": "search", 
+    "updated_at": "2019-10-06T09:51:26.539Z"
+}

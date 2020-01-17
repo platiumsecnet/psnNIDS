@@ -1,0 +1,25 @@
+{
+    "search": {
+        "columns": [
+            "src_ip", 
+            "src_port", 
+            "dest_ip", 
+            "dest_port", 
+            "h225ras.full_message.admissionConfirm.dest_call_signal_address.ipAddress.ip", 
+            "h225ras.full_message.admissionConfirm.dest_call_signal_address.ipAddress.port"
+        ], 
+        "description": "", 
+        "hits": 0, 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"01a434d0-dee0-11e9-8b38-bbc335ba1a14\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+        }, 
+        "sort": [
+            "@timestamp", 
+            "desc"
+        ], 
+        "title": "H225Ras-EventsList", 
+        "version": 1
+    }, 
+    "type": "search", 
+    "updated_at": "2019-10-07T14:43:24.411Z"
+}

@@ -1,0 +1,17 @@
+{
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    }, 
+    "type": "visualization", 
+    "updated_at": "2019-10-04T14:35:16.614Z", 
+    "visualization": {
+        "description": "", 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        }, 
+        "title": "SN-Timelion-Signatures", 
+        "uiStateJSON": "{}", 
+        "version": 1, 
+        "visState": "{\"type\":\"timelion\",\"title\":\"SN-Timelion-Signatures\",\"params\":{\"expression\":\".es(q=\\\"event_type:alert\\\", split=\\\"alert.signature.keyword:10\\\").label(regex=\\\".*:(.+)>.*\\\",label=\\\"$1\\\")\",\"interval\":\"auto\"}}"
+    }
+}

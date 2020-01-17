@@ -1,0 +1,17 @@
+{
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    }, 
+    "type": "visualization", 
+    "updated_at": "2019-10-06T09:51:48.975Z", 
+    "visualization": {
+        "description": "", 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"logstash-alert-*\",\"query\":{\"query\":{\"query_string\":{\"query\":\"event_type: alert\",\"analyze_wildcard\":true}},\"language\":\"lucene\"},\"filter\":[]}"
+        }, 
+        "title": "Alert-Count", 
+        "uiStateJSON": "{\"spy\":{\"mode\":{\"name\":null,\"fill\":false}}}", 
+        "version": 1, 
+        "visState": "{\"title\":\"Alert-Count\",\"type\":\"metric\",\"params\":{\"fontSize\":60,\"spyPerPage\":10},\"aggs\":[{\"id\":\"1\",\"type\":\"count\",\"schema\":\"metric\",\"params\":{}}],\"listeners\":{}}"
+    }
+}

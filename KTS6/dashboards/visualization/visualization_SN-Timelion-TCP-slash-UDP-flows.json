@@ -1,0 +1,17 @@
+{
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    }, 
+    "type": "visualization", 
+    "updated_at": "2019-10-04T14:35:15.603Z", 
+    "visualization": {
+        "description": "", 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        }, 
+        "title": "SN-Timelion-TCP/UDP-flows", 
+        "uiStateJSON": "{}", 
+        "version": 1, 
+        "visState": "{\"type\":\"timelion\",\"title\":\"SN-Timelion-TCP/UDP-flows\",\"params\":{\"expression\":\".es(q='event_type:flow AND proto:TCP').label('TCP Flows'), .es(q='event_type:flow AND proto:UDP').label('UDP Flows')\",\"interval\":\"auto\"}}"
+    }
+}

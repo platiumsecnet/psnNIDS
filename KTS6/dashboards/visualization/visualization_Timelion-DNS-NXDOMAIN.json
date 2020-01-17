@@ -1,0 +1,17 @@
+{
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    }, 
+    "type": "visualization", 
+    "updated_at": "2019-10-06T09:51:38.774Z", 
+    "visualization": {
+        "description": "", 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        }, 
+        "title": "Timelion-DNS-NXDOMAIN", 
+        "uiStateJSON": "{}", 
+        "version": 1, 
+        "visState": "{\"type\":\"timelion\",\"title\":\"Timelion-DNS-NXDOMAIN\",\"params\":{\"expression\":\".es(q='dns.rcode:NXDOMAIN').label('DNS-NXDOMAIN')\",\"interval\":\"auto\"}}"
+    }
+}

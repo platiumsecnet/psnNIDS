@@ -1,0 +1,17 @@
+{
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    }, 
+    "type": "visualization", 
+    "updated_at": "2019-10-04T14:35:17.649Z", 
+    "visualization": {
+        "description": "", 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+        }, 
+        "title": "SN-Timelion-SSH/TLS/DNP3", 
+        "uiStateJSON": "{}", 
+        "version": 1, 
+        "visState": "{\"title\":\"SN-Timelion-SSH/TLS/DNP3\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(q='event_type:ssh').label('SSH').color(#00cc99),  .es(q='event_type:tls').label('TLS').color(#ff9900),  .es(q='event_type:dnp3').label('DNP3').color(#999966)\",\"interval\":\"auto\"},\"aggs\":[]}"
+    }
+}

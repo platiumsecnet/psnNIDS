@@ -1,0 +1,311 @@
+# An employee record
+arp:
+  direction: string
+  sender_mac: string
+  sender_ip: string
+  target_mac: string
+  target_ip: string
+
+dcerpc:
+  version: string
+  call_id: string
+  context0_transfer_syntax: string
+  context0_syntax_version: string
+  #context1_transferSyntax: string
+  #context1_syntaxVersion: string
+  #context2_transferSyntax: string
+  #context2_syntaxVersion: string
+  #context3_transferSyntax: string
+  #context3_syntaxVersion: string
+  #context4_transferSyntax: string
+  #context4_syntaxVersion: string
+  operation: string
+
+dhcp:
+   dhcp_type: string
+   client_mac: string
+   id: integer
+   assigned_ip: string
+   client_ip: string
+   dhcp_type: string
+   client_id: string
+   hostname: string
+   params: string
+   next_server_ip: string
+   lease_time: string
+   subnet_mask: string
+   routers: string
+   dns_servers: string
+
+dnp3:
+  function_code: string
+  objects: string
+  #iin: string
+
+dns:
+  rrname: string
+  rrtype: string
+  rdata: string
+  type: string
+
+enip:
+  command: string
+  service: string
+  interface_handle: string
+  cip_cm_service: string
+
+ftp:
+  username: string
+  password: string
+  port: string
+  mode: string
+#  mode: string
+  line: string
+  state: string
+  state_change: string
+
+h225:
+  source_address: string
+  dest_address: string
+  source_call_signal_address: string
+  dest_call_signal_address: string
+  h245_tunnelling: string
+  fast_start: string
+  full_message: string
+#  full_message: string
+
+h225ras:
+  version_id: integer
+  call_signal_address: string
+  dest_call_signal_address: string
+  ras_address: string
+  terminal_alias: string
+  full_message: string
+#  full_message: string
+
+h245:
+  dmft: integer
+  full_message: string
+
+http:
+   http_method: string
+   url: string
+   hostname: string
+   http_user_agent: string
+   http_content_type: string
+   accept_encoding: string
+   accept_language: string
+   http_refer: string
+   http_method: string
+   protocol: string
+   status: string
+   redirect: string
+   length: string
+
+iax2:
+  pt_type: string
+  flow_id: integer
+
+icq: 
+  uin: string
+  password: string
+  port: string
+  ip: string
+  from: string
+  to: string
+  content: string
+  line: string
+#  line: string
+  state: string
+  state_change: string
+
+igmp:
+  command: string
+  max_resp_time: string
+  muticast_address: string
+
+ikev2:
+  exchange_type: string
+  alg_prf: string
+  alg_dh: string
+  alg_enc: string
+  notify: string
+  payload: string
+
+imap:
+  user: string
+  password: string
+  mailbox: string
+  mail_counter: string
+  line: string
+  from: string
+  to: string
+  cc: string
+  subject: string
+  attached_files: string
+  line: string
+  state: string
+  state_change: string
+
+irc:
+  username: string
+  #hostname: string
+  #servername: string
+  realname: string
+  nickname: string
+  channel: string
+  from: string
+  to: string
+#  channel: string
+  content: string
+  line: string
+  #  line: string
+  state: string
+  state_change: string
+
+krb5:
+  msg_type: string
+  cname: string
+  sname: string
+  realm: string
+  encryption: string
+  weak_encryption: string
+
+ldap:
+  message_type: string
+  matched_dn: string
+  response_code: string
+
+megaco:
+  m_id: string
+  command_request: string
+  termination_id: string
+  service_change_descriptor: string
+
+modbus:
+  direction: string
+  slave_unit_id: string
+  function: string
+
+nfs:
+  machine_name: string
+  version: string
+  hhash: string
+  procedure: string
+  filename: string  
+  status: string
+  type: string  
+
+nntp:
+  group: string
+  article: string
+  line: string
+  from: string
+  reply_to: string
+  subject: string
+  content: string
+  line: string
+  state: string
+  state_change: string
+
+oicq:
+  oicq_command: string
+  oicq_data: string
+  oicq_version: string
+#  line: string
+
+pop:
+  username: string
+  password: string
+  message_id: string
+  line: string
+  from: string
+  to: string
+  cc: string
+  request_parameter: string
+  subject: string
+  attached_files: string
+  request_command: string
+  response_indicator: string
+  response_description: string
+  #message_header0: string
+  #message_header1: string
+  #message_header2: string
+  #message_header3: string
+  #message_header4: string
+  #message_header5: string
+  #message_header6: string
+  #message_header7: string
+  state: string
+  state_change: string
+
+rtp:
+  pt_type: string
+  flow_id: integer
+
+sip:
+  from: string
+  to: string
+  sdp_connection_addr: string
+  sdp_media_port: string
+  sdp_media_proto: string
+  sdp_media_format: string
+  rtpmap: string
+  request_line: string
+  status_line: string
+#  line
+
+smb:
+  smb_command: string
+  transaction: string
+  opcode: string
+  browser_command: string
+
+smtp:
+  helo: string
+  mail_from: string
+  rcpt_to: string
+  email: string
+
+ssh:
+  proto_version: string
+  software_version: string
+
+t38:
+  message_type: string
+  indicator: string
+  transport: string
+  data_type: string
+
+telnet:
+   payload_to_client: string
+
+tftp:
+  file: string
+#  filename: string
+  packet: string
+  #  line: string
+  state: string
+  state_change: string
+
+wap:
+   method: string
+   uri: string
+   cookie: string
+   rendering: string
+
+xmpp:
+   type: string
+   action: string
+   from: string
+   to: string
+   change_session_state: string
+   version: string
+   id: string
+
+
+
+
+
+
+

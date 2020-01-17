@@ -1,0 +1,22 @@
+{
+    "dashboard": {
+        "description": "", 
+        "hits": 0, 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+        }, 
+        "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}", 
+        "panelsJSON": "[{\"embeddableConfig\":{\"vis\":{\"legendOpen\":false}},\"gridData\":{\"h\":14,\"i\":\"1\",\"w\":34,\"x\":0,\"y\":7},\"id\":\"669c73d0-c194-11e8-9888-3f5bc9c31629\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"2\",\"w\":14,\"x\":24,\"y\":21},\"id\":\"e7c2b5c0-c197-11e8-9888-3f5bc9c31629\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"3\",\"w\":10,\"x\":38,\"y\":21},\"id\":\"111b9450-c198-11e8-9888-3f5bc9c31629\",\"panelIndex\":\"3\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"4\",\"w\":10,\"x\":14,\"y\":21},\"id\":\"f87379e0-c197-11e8-9888-3f5bc9c31629\",\"panelIndex\":\"4\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"5\",\"w\":14,\"x\":0,\"y\":21},\"id\":\"d294cdf0-c197-11e8-9888-3f5bc9c31629\",\"panelIndex\":\"5\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":14,\"i\":\"6\",\"w\":14,\"x\":34,\"y\":7},\"id\":\"c11cccc0-c198-11e8-9888-3f5bc9c31629\",\"panelIndex\":\"6\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":13,\"i\":\"7\",\"w\":12,\"x\":0,\"y\":36},\"id\":\"d13dacf0-c198-11e8-9888-3f5bc9c31629\",\"panelIndex\":\"7\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":13,\"i\":\"8\",\"w\":12,\"x\":12,\"y\":36},\"id\":\"0c6f2dd0-c199-11e8-9888-3f5bc9c31629\",\"panelIndex\":\"8\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":13,\"i\":\"9\",\"w\":12,\"x\":36,\"y\":36},\"id\":\"27e8ded0-c199-11e8-9888-3f5bc9c31629\",\"panelIndex\":\"9\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":13,\"i\":\"10\",\"w\":12,\"x\":24,\"y\":36},\"id\":\"d6720b50-c19b-11e8-9888-3f5bc9c31629\",\"panelIndex\":\"10\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":22,\"i\":\"11\",\"w\":48,\"x\":0,\"y\":49},\"id\":\"2322f9b0-c196-11e8-9888-3f5bc9c31629\",\"panelIndex\":\"11\",\"type\":\"search\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":7,\"i\":\"12\",\"w\":48,\"x\":0,\"y\":0},\"id\":\"d4b13740-c2f5-11e8-9eb1-af8fa48f4c1b\",\"panelIndex\":\"12\",\"type\":\"visualization\",\"version\":\"6.4.1\"}]", 
+        "refreshInterval": {
+            "pause": true, 
+            "value": 0
+        }, 
+        "timeFrom": "now-7d", 
+        "timeRestore": true, 
+        "timeTo": "now", 
+        "title": "DHCP", 
+        "version": 1
+    }, 
+    "type": "dashboard", 
+    "updated_at": "2019-10-13T02:04:00.670Z"
+}

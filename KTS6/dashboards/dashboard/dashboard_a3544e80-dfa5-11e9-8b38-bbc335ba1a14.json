@@ -1,0 +1,16 @@
+{
+    "dashboard": {
+        "description": "", 
+        "hits": 0, 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+        }, 
+        "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}", 
+        "panelsJSON": "[{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":0,\"w\":10,\"h\":9,\"i\":\"1\"},\"id\":\"ce6a0610-dee6-11e9-8b38-bbc335ba1a14ldap\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":9,\"w\":47,\"h\":16,\"i\":\"2\"},\"id\":\"6b1148d0-dee6-11e9-8b38-bbc335ba1a14ldap\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":25,\"w\":12,\"h\":15,\"i\":\"3\"},\"id\":\"ed79a480-dee5-11e9-8b38-bbc335ba1a14ldap\",\"panelIndex\":\"3\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":12,\"y\":25,\"w\":12,\"h\":15,\"i\":\"4\"},\"id\":\"0001c0b0-dee6-11e9-8b38-bbc335ba1a14ldap\",\"panelIndex\":\"4\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":36,\"y\":25,\"w\":11,\"h\":15,\"i\":\"5\"},\"id\":\"3f075400-dee6-11e9-8b38-bbc335ba1a14ldap\",\"panelIndex\":\"5\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":24,\"y\":25,\"w\":12,\"h\":15,\"i\":\"6\"},\"id\":\"26b744a0-dee6-11e9-8b38-bbc335ba1a14ldap\",\"panelIndex\":\"6\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{\"vis\":{\"legendOpen\":false}},\"gridData\":{\"x\":10,\"y\":0,\"w\":38,\"h\":9,\"i\":\"7\"},\"id\":\"14345890-dee6-11e9-8b38-bbc335ba1a14ldap\",\"panelIndex\":\"7\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":55,\"w\":46,\"h\":17,\"i\":\"8\"},\"id\":\"98791560-dee5-11e9-8b38-bbc335ba1a14\",\"panelIndex\":\"8\",\"type\":\"search\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":40,\"w\":24,\"h\":15,\"i\":\"9\"},\"id\":\"c1097b10-e06a-11e9-8b38-bbc335ba1a14\",\"panelIndex\":\"9\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":24,\"y\":40,\"w\":23,\"h\":13,\"i\":\"10\"},\"id\":\"dfc362f0-e06a-11e9-8b38-bbc335ba1a14\",\"panelIndex\":\"10\",\"type\":\"visualization\",\"version\":\"6.8.2\"}]", 
+        "timeRestore": false, 
+        "title": "LDAP", 
+        "version": 1
+    }, 
+    "type": "dashboard", 
+    "updated_at": "2019-10-13T02:39:34.495Z"
+}

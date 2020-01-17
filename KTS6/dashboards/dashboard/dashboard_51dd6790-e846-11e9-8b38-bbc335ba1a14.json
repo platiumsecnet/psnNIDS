@@ -1,0 +1,16 @@
+{
+    "dashboard": {
+        "description": "", 
+        "hits": 0, 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+        }, 
+        "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}", 
+        "panelsJSON": "[{\"embeddableConfig\":{},\"gridData\":{\"h\":12,\"i\":\"1\",\"w\":13,\"x\":0,\"y\":0},\"id\":\"ce6a0610-dee6-11e9-8b38-bbc335ba1a14ftp\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{\"vis\":{\"legendOpen\":false}},\"gridData\":{\"h\":12,\"i\":\"2\",\"w\":34,\"x\":13,\"y\":0},\"id\":\"14345890-dee6-11e9-8b38-bbc335ba1a14ftp\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":16,\"i\":\"3\",\"w\":47,\"x\":0,\"y\":12},\"id\":\"6b1148d0-dee6-11e9-8b38-bbc335ba1a14ftp\",\"panelIndex\":\"3\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"4\",\"w\":12,\"x\":12,\"y\":28},\"id\":\"ed79a480-dee5-11e9-8b38-bbc335ba1a14ftp\",\"panelIndex\":\"4\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"5\",\"w\":12,\"x\":0,\"y\":28},\"id\":\"0001c0b0-dee6-11e9-8b38-bbc335ba1a14ftp\",\"panelIndex\":\"5\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"6\",\"w\":11,\"x\":24,\"y\":28},\"id\":\"26b744a0-dee6-11e9-8b38-bbc335ba1a14ftp\",\"panelIndex\":\"6\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"7\",\"w\":12,\"x\":35,\"y\":28},\"id\":\"3f075400-dee6-11e9-8b38-bbc335ba1a14ftp\",\"panelIndex\":\"7\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":17,\"i\":\"8\",\"w\":47,\"x\":1,\"y\":57},\"id\":\"db478b70-e844-11e9-8b38-bbc335ba1a14\",\"panelIndex\":\"8\",\"type\":\"search\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":14,\"i\":\"9\",\"w\":12,\"x\":0,\"y\":43},\"id\":\"c1097b10-e06a-11e9-8b38-bbc335ba1a14ftpusername\",\"panelIndex\":\"9\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":14,\"i\":\"10\",\"w\":12,\"x\":12,\"y\":43},\"id\":\"c1097b10-e06a-11e9-8b38-bbc335ba1a14ftppassword\",\"panelIndex\":\"10\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":14,\"i\":\"11\",\"w\":12,\"x\":24,\"y\":43},\"id\":\"c1097b10-e06a-11e9-8b38-bbc335ba1a14ftpstate_change\",\"panelIndex\":\"11\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":14,\"i\":\"12\",\"w\":12,\"x\":36,\"y\":43},\"id\":\"c1097b10-e06a-11e9-8b38-bbc335ba1a14ftpline\",\"panelIndex\":\"12\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":12,\"i\":\"13\",\"w\":19,\"x\":0,\"y\":74},\"id\":\"6786fc60-e061-11e9-8b38-bbc335ba1a14ftpstate\",\"panelIndex\":\"13\",\"type\":\"visualization\",\"version\":\"6.8.2\"}]", 
+        "timeRestore": false, 
+        "title": "FTP", 
+        "version": 1
+    }, 
+    "type": "dashboard", 
+    "updated_at": "2019-10-13T02:14:51.207Z"
+}

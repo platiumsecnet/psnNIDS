@@ -1,0 +1,22 @@
+{
+    "dashboard": {
+        "description": "", 
+        "hits": 0, 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+        }, 
+        "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}", 
+        "panelsJSON": "[{\"embeddableConfig\":{\"vis\":{\"legendOpen\":false}},\"gridData\":{\"h\":7,\"i\":\"1\",\"w\":35,\"x\":13,\"y\":0},\"id\":\"be131f50-c1d1-11e8-9888-3f5bc9c31629\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"2\",\"w\":14,\"x\":24,\"y\":25},\"id\":\"ea18f570-c1d1-11e8-9888-3f5bc9c31629\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"3\",\"w\":13,\"x\":0,\"y\":25},\"id\":\"2013c6a0-c1d2-11e8-9888-3f5bc9c31629\",\"panelIndex\":\"3\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"4\",\"w\":10,\"x\":38,\"y\":25},\"id\":\"30674f90-c1d2-11e8-9888-3f5bc9c31629\",\"panelIndex\":\"4\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"5\",\"w\":11,\"x\":13,\"y\":25},\"id\":\"89bd2f10-c1d2-11e8-9888-3f5bc9c31629\",\"panelIndex\":\"5\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"6\",\"w\":16,\"x\":16,\"y\":40},\"id\":\"c2fc55d0-c1d2-11e8-9888-3f5bc9c31629\",\"panelIndex\":\"6\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"7\",\"w\":16,\"x\":0,\"y\":40},\"id\":\"cf040440-c1d2-11e8-9888-3f5bc9c31629\",\"panelIndex\":\"7\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":15,\"i\":\"8\",\"w\":16,\"x\":32,\"y\":40},\"id\":\"dcd91fb0-c1d2-11e8-9888-3f5bc9c31629\",\"panelIndex\":\"8\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":27,\"i\":\"9\",\"w\":48,\"x\":0,\"y\":55},\"id\":\"86d14f30-c1d1-11e8-9888-3f5bc9c31629\",\"panelIndex\":\"9\",\"type\":\"search\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":18,\"i\":\"10\",\"w\":48,\"x\":0,\"y\":7},\"id\":\"0e792240-c1d3-11e8-9888-3f5bc9c31629\",\"panelIndex\":\"10\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":7,\"i\":\"11\",\"w\":13,\"x\":0,\"y\":0},\"id\":\"02363350-c2f6-11e8-9eb1-af8fa48f4c1b\",\"panelIndex\":\"11\",\"type\":\"visualization\",\"version\":\"6.4.1\"}]", 
+        "refreshInterval": {
+            "pause": true, 
+            "value": 0
+        }, 
+        "timeFrom": "now-7d", 
+        "timeRestore": true, 
+        "timeTo": "now", 
+        "title": "TFTP", 
+        "version": 1
+    }, 
+    "type": "dashboard", 
+    "updated_at": "2019-10-13T09:06:43.227Z"
+}
