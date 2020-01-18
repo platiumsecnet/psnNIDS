@@ -1,10 +1,8 @@
 
 Parser | Physical Layer | Link Layer | Transport Layer | Application Layer
 | ---- | -------------- | ---------- | --------------- | ---
-Fshark | 
-Wireshark | 
-Cloudshark | 
-Suricata |
-Snort |
-Bro IDS |
-Moloch |
+|eagle_eye | 
+|Security Onion |
+|Suricata |
+|Snort |
+|Bro IDS |
