@@ -1,0 +1,22 @@
+{
+    "dashboard": {
+        "description": "", 
+        "hits": 0, 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\":[],\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}}}"
+        }, 
+        "optionsJSON": "{\"darkTheme\":false,\"useMargins\":true}", 
+        "panelsJSON": "[{\"gridData\":{\"h\":10,\"i\":\"3\",\"w\":31,\"x\":17,\"y\":0},\"id\":\"SN-FILE-ByTypeOverTime\",\"panelIndex\":\"3\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"gridData\":{\"h\":20,\"i\":\"8\",\"w\":12,\"x\":12,\"y\":55},\"id\":\"SN-FILE-Top20DestIP\",\"panelIndex\":\"8\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"gridData\":{\"h\":20,\"i\":\"9\",\"w\":12,\"x\":36,\"y\":55},\"id\":\"SN-FILE-Top20DestPort\",\"panelIndex\":\"9\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"gridData\":{\"h\":20,\"i\":\"10\",\"w\":12,\"x\":0,\"y\":55},\"id\":\"SN-FILE-Top20SrcIP\",\"panelIndex\":\"10\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"gridData\":{\"h\":20,\"i\":\"11\",\"w\":12,\"x\":24,\"y\":55},\"id\":\"SN-FILE-Top20SrcPort\",\"panelIndex\":\"11\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{\"mapCenter\":[25.48295117535531,-4.658203125],\"mapZoom\":3},\"gridData\":{\"h\":26,\"i\":\"13\",\"w\":48,\"x\":0,\"y\":10},\"id\":\"35fe0970-76a2-11e7-8761-edc8301be2be\",\"panelIndex\":\"13\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":28,\"i\":\"14\",\"w\":48,\"x\":0,\"y\":75},\"id\":\"SN-FILE-EventsList\",\"panelIndex\":\"14\",\"type\":\"search\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":19,\"i\":\"15\",\"w\":24,\"x\":22,\"y\":36},\"id\":\"acba4210-c1d6-11e8-9888-3f5bc9c31629\",\"panelIndex\":\"15\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":19,\"i\":\"16\",\"w\":21,\"x\":0,\"y\":36},\"id\":\"af7f6010-c1d7-11e8-9888-3f5bc9c31629\",\"panelIndex\":\"16\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"h\":10,\"i\":\"17\",\"w\":16,\"x\":0,\"y\":0},\"id\":\"1e74daa0-c2f9-11e8-9eb1-af8fa48f4c1b\",\"panelIndex\":\"17\",\"type\":\"visualization\",\"version\":\"6.4.1\"}]", 
+        "refreshInterval": {
+            "pause": true, 
+            "value": 0
+        }, 
+        "timeFrom": "now-30d", 
+        "timeRestore": true, 
+        "timeTo": "now", 
+        "title": "FILE-Transactions", 
+        "version": 1
+    }, 
+    "type": "dashboard", 
+    "updated_at": "2019-10-06T09:46:21.302Z"
+}

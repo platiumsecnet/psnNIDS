@@ -1,0 +1,26 @@
+{
+    "search": {
+        "columns": [
+            "src_ip", 
+            "src_port", 
+            "dest_ip", 
+            "dest_port", 
+            "proto", 
+            "rtp.flow_id", 
+            "rtp.pt_type"
+        ], 
+        "description": "", 
+        "hits": 0, 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"7d8b0180-dfb4-11e9-8b38-bbc335ba1a14\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+        }, 
+        "sort": [
+            "@timestamp", 
+            "desc"
+        ], 
+        "title": "RTP-EventList", 
+        "version": 1
+    }, 
+    "type": "search", 
+    "updated_at": "2019-10-13T08:46:15.948Z"
+}

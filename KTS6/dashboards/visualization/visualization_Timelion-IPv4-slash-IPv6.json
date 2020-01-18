@@ -1,0 +1,17 @@
+{
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    }, 
+    "type": "visualization", 
+    "updated_at": "2019-10-06T09:51:39.784Z", 
+    "visualization": {
+        "description": "", 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"query\":\"\",\"language\":\"lucene\"},\"filter\":[]}"
+        }, 
+        "title": "Timelion-IPv4/IPv6", 
+        "uiStateJSON": "{}", 
+        "version": 1, 
+        "visState": "{\"title\":\"Timelion-IPv4/IPv6\",\"type\":\"timelion\",\"params\":{\"expression\":\".es(metric='avg:stats.decoder.ipv4').derivative().max(0).label('IPv4'),  .es(metric='avg:stats.decoder.ipv6').derivative().max(0).label('IPv6')\",\"interval\":\"auto\"},\"aggs\":[]}"
+    }
+}

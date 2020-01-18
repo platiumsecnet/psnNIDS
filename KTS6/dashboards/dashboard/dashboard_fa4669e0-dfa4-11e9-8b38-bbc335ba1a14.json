@@ -1,0 +1,16 @@
+{
+    "dashboard": {
+        "description": "", 
+        "hits": 0, 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+        }, 
+        "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}", 
+        "panelsJSON": "[{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":0,\"w\":11,\"h\":10,\"i\":\"1\"},\"id\":\"ce6a0610-dee6-11e9-8b38-bbc335ba1a14igmp\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":10,\"w\":48,\"h\":15,\"i\":\"2\"},\"id\":\"6b1148d0-dee6-11e9-8b38-bbc335ba1a14igmp\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":25,\"w\":12,\"h\":14,\"i\":\"3\"},\"id\":\"ed79a480-dee5-11e9-8b38-bbc335ba1a14igmp\",\"panelIndex\":\"3\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":23,\"y\":25,\"w\":12,\"h\":14,\"i\":\"4\"},\"id\":\"0001c0b0-dee6-11e9-8b38-bbc335ba1a14igmp\",\"panelIndex\":\"4\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":11,\"y\":0,\"w\":36,\"h\":10,\"i\":\"7\"},\"id\":\"14345890-dee6-11e9-8b38-bbc335ba1a14igmp\",\"panelIndex\":\"7\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":54,\"w\":48,\"h\":21,\"i\":\"8\"},\"id\":\"721dbf60-dee5-11e9-8b38-bbc335ba1a14\",\"panelIndex\":\"8\",\"type\":\"search\",\"version\":\"6.8.2\"},{\"gridData\":{\"x\":0,\"y\":39,\"w\":13,\"h\":15,\"i\":\"9\"},\"version\":\"6.8.2\",\"panelIndex\":\"9\",\"type\":\"visualization\",\"id\":\"c1097b10-e06a-11e9-8b38-bbc335ba1a14igmpmax_resp_time\",\"embeddableConfig\":{}},{\"gridData\":{\"x\":13,\"y\":39,\"w\":15,\"h\":15,\"i\":\"10\"},\"version\":\"6.8.2\",\"panelIndex\":\"10\",\"type\":\"visualization\",\"id\":\"c1097b10-e06a-11e9-8b38-bbc335ba1a14igmpcommand\",\"embeddableConfig\":{}},{\"gridData\":{\"x\":28,\"y\":39,\"w\":18,\"h\":15,\"i\":\"11\"},\"version\":\"6.8.2\",\"panelIndex\":\"11\",\"type\":\"visualization\",\"id\":\"c1097b10-e06a-11e9-8b38-bbc335ba1a14igmpmuticast_address\",\"embeddableConfig\":{}}]", 
+        "timeRestore": false, 
+        "title": "IGMP", 
+        "version": 1
+    }, 
+    "type": "dashboard", 
+    "updated_at": "2019-10-06T09:51:35.716Z"
+}

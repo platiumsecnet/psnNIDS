@@ -1,0 +1,16 @@
+{
+    "dashboard": {
+        "description": "", 
+        "hits": 0, 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+        }, 
+        "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}", 
+        "panelsJSON": "[{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":0,\"w\":11,\"h\":8,\"i\":\"1\"},\"id\":\"ce6a0610-dee6-11e9-8b38-bbc335ba1a14rtp\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":8,\"w\":48,\"h\":15,\"i\":\"2\"},\"id\":\"6b1148d0-dee6-11e9-8b38-bbc335ba1a14rtp\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":23,\"w\":11,\"h\":15,\"i\":\"3\"},\"id\":\"ed79a480-dee5-11e9-8b38-bbc335ba1a14rtp\",\"panelIndex\":\"3\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":11,\"y\":23,\"w\":12,\"h\":15,\"i\":\"4\"},\"id\":\"0001c0b0-dee6-11e9-8b38-bbc335ba1a14rtp\",\"panelIndex\":\"4\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":36,\"y\":23,\"w\":12,\"h\":15,\"i\":\"5\"},\"id\":\"3f075400-dee6-11e9-8b38-bbc335ba1a14rtp\",\"panelIndex\":\"5\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":23,\"y\":23,\"w\":13,\"h\":15,\"i\":\"6\"},\"id\":\"26b744a0-dee6-11e9-8b38-bbc335ba1a14rtp\",\"panelIndex\":\"6\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{\"vis\":{\"legendOpen\":false}},\"gridData\":{\"x\":11,\"y\":0,\"w\":37,\"h\":8,\"i\":\"7\"},\"id\":\"14345890-dee6-11e9-8b38-bbc335ba1a14rtp\",\"panelIndex\":\"7\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":24,\"y\":38,\"w\":24,\"h\":15,\"i\":\"8\"},\"id\":\"df0495e0-e061-11e9-8b38-bbc335ba1a14\",\"panelIndex\":\"8\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":38,\"w\":24,\"h\":15,\"i\":\"9\"},\"id\":\"fb87a090-e061-11e9-8b38-bbc335ba1a14\",\"panelIndex\":\"9\",\"type\":\"visualization\",\"version\":\"6.8.2\"},{\"gridData\":{\"x\":0,\"y\":53,\"w\":48,\"h\":16,\"i\":\"10\"},\"version\":\"6.8.2\",\"panelIndex\":\"10\",\"type\":\"search\",\"id\":\"eaf733d0-ed95-11e9-856a-2f75daa41b37\",\"embeddableConfig\":{}}]", 
+        "timeRestore": false, 
+        "title": "RTP", 
+        "version": 1
+    }, 
+    "type": "dashboard", 
+    "updated_at": "2019-10-13T08:46:42.521Z"
+}

@@ -1,0 +1,22 @@
+{
+    "dashboard": {
+        "description": "", 
+        "hits": 0, 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}}}"
+        }, 
+        "optionsJSON": "{\"darkTheme\":true,\"useMargins\":true}", 
+        "panelsJSON": "[{\"gridData\":{\"x\":0,\"y\":56,\"w\":12,\"h\":15,\"i\":\"1\"},\"id\":\"TLS-ByIssuerdn\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"gridData\":{\"x\":12,\"y\":56,\"w\":22,\"h\":15,\"i\":\"2\"},\"id\":\"TLS-BySni\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"gridData\":{\"x\":35,\"y\":56,\"w\":12,\"h\":15,\"i\":\"3\"},\"id\":\"TLS-BySubject\",\"panelIndex\":\"3\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"gridData\":{\"x\":24,\"y\":71,\"w\":24,\"h\":30,\"i\":\"4\"},\"id\":\"TLS-ByVersionBySni\",\"panelIndex\":\"4\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{\"vis\":{\"legendOpen\":false}},\"gridData\":{\"x\":13,\"y\":0,\"w\":33,\"h\":11,\"i\":\"5\"},\"id\":\"TLS-EventsOverTime\",\"panelIndex\":\"5\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"gridData\":{\"x\":0,\"y\":11,\"w\":47,\"h\":30,\"i\":\"6\"},\"id\":\"TLS-GeoIP\",\"panelIndex\":\"6\",\"type\":\"visualization\",\"version\":\"6.4.1\",\"embeddableConfig\":{\"mapZoom\":3,\"mapCenter\":[40.84706035607122,-11.513671875000002]}},{\"embeddableConfig\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"gridData\":{\"x\":24,\"y\":41,\"w\":12,\"h\":15,\"i\":\"7\"},\"id\":\"TLS-Top20DestIP\",\"panelIndex\":\"7\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"gridData\":{\"x\":36,\"y\":41,\"w\":12,\"h\":15,\"i\":\"8\"},\"id\":\"TLS-Top20DestPort\",\"panelIndex\":\"8\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"gridData\":{\"x\":0,\"y\":41,\"w\":12,\"h\":15,\"i\":\"9\"},\"id\":\"TLS-Top20SrcIP\",\"panelIndex\":\"9\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"gridData\":{\"x\":12,\"y\":41,\"w\":12,\"h\":15,\"i\":\"10\"},\"id\":\"TLS-Top20SrcPort\",\"panelIndex\":\"10\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":101,\"w\":48,\"h\":18,\"i\":\"11\"},\"id\":\"TLS-EventsList\",\"panelIndex\":\"11\",\"type\":\"search\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":0,\"w\":12,\"h\":11,\"i\":\"12\"},\"id\":\"9ff304c0-c2f5-11e8-9eb1-af8fa48f4c1b\",\"panelIndex\":\"12\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":71,\"w\":24,\"h\":30,\"i\":\"13\"},\"id\":\"2cf8aef0-cb44-11e8-8e2b-bf314673d4bf\",\"panelIndex\":\"13\",\"type\":\"visualization\",\"version\":\"6.4.1\"}]", 
+        "refreshInterval": {
+            "pause": true, 
+            "value": 0
+        }, 
+        "timeFrom": "now-90d", 
+        "timeRestore": true, 
+        "timeTo": "now", 
+        "title": "TLS", 
+        "version": 1
+    }, 
+    "type": "dashboard", 
+    "updated_at": "2019-10-06T09:51:35.710Z"
+}

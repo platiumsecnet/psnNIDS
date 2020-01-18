@@ -1,0 +1,17 @@
+{
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    }, 
+    "type": "visualization", 
+    "updated_at": "2019-10-06T09:51:36.747Z", 
+    "visualization": {
+        "description": "", 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        }, 
+        "title": "Timelion-Alert-Severity", 
+        "uiStateJSON": "{}", 
+        "version": 1, 
+        "visState": "{\"type\":\"timelion\",\"title\":\"Timelion-Alert-Severity\",\"params\":{\"expression\":\".es(q=\\\"event_type:alert\\\", split=\\\"alert.severity:10\\\").bars(width=4).label(regex=\\\".*:(.+)>.*\\\",label=\\\"Severity $1\\\")\",\"interval\":\"auto\"}}"
+    }
+}

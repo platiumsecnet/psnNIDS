@@ -1,0 +1,30 @@
+{
+    "search": {
+        "columns": [
+            "dest_ip", 
+            "dest_port", 
+            "src_ip", 
+            "src_port", 
+            "wap.cookie", 
+            "wap.method", 
+            "wap.public_id", 
+            "wap.rendering", 
+            "wap.status_code", 
+            "wap.uri", 
+            "wap.xml_version"
+        ], 
+        "description": "", 
+        "hits": 0, 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"a977fd90-e066-11e9-8b38-bbc335ba1a14\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+        }, 
+        "sort": [
+            "@timestamp", 
+            "desc"
+        ], 
+        "title": "WAP-EventList", 
+        "version": 1
+    }, 
+    "type": "search", 
+    "updated_at": "2019-10-06T09:51:26.532Z"
+}

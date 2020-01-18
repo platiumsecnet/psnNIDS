@@ -1,0 +1,22 @@
+{
+    "dashboard": {
+        "description": "", 
+        "hits": 0, 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"filter\":[],\"query\":{\"language\":\"lucene\",\"query\":{\"query_string\":{\"analyze_wildcard\":true,\"default_field\":\"*\",\"query\":\"*\"}}}}"
+        }, 
+        "optionsJSON": "{\"darkTheme\":false,\"useMargins\":false}", 
+        "panelsJSON": "[{\"gridData\":{\"x\":24,\"y\":62,\"w\":24,\"h\":20,\"i\":\"1\"},\"id\":\"SMTP-AttachmentsExtension\",\"panelIndex\":\"1\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"gridData\":{\"x\":0,\"y\":12,\"w\":48,\"h\":30,\"i\":\"2\"},\"id\":\"SMTP-GeoIP\",\"panelIndex\":\"2\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"gridData\":{\"x\":11,\"y\":0,\"w\":36,\"h\":12,\"i\":\"3\"},\"id\":\"SMTP-SmtpOverTime\",\"panelIndex\":\"3\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"gridData\":{\"x\":12,\"y\":42,\"w\":12,\"h\":20,\"i\":\"4\"},\"id\":\"SMTP-Top20DestIP\",\"panelIndex\":\"4\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"gridData\":{\"x\":24,\"y\":42,\"w\":12,\"h\":20,\"i\":\"5\"},\"id\":\"SMTP-Top20DestPort\",\"panelIndex\":\"5\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"gridData\":{\"x\":0,\"y\":82,\"w\":24,\"h\":20,\"i\":\"6\"},\"id\":\"SMTP-Top20MailApplications\",\"panelIndex\":\"6\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"gridData\":{\"x\":0,\"y\":102,\"w\":14,\"h\":19,\"i\":\"7\"},\"id\":\"SMTP-Top20MailOrganisations\",\"panelIndex\":\"7\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"gridData\":{\"x\":14,\"y\":102,\"w\":14,\"h\":19,\"i\":\"8\"},\"id\":\"SMTP-Top20MailSendingIPs\",\"panelIndex\":\"8\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"gridData\":{\"x\":0,\"y\":42,\"w\":12,\"h\":20,\"i\":\"9\"},\"id\":\"SMTP-Top20SrcIP\",\"panelIndex\":\"9\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":null,\"direction\":null}}}},\"gridData\":{\"x\":36,\"y\":42,\"w\":12,\"h\":20,\"i\":\"10\"},\"id\":\"SMTP-Top20SrcPort\",\"panelIndex\":\"10\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{\"vis\":{\"legendOpen\":false}},\"gridData\":{\"x\":24,\"y\":82,\"w\":24,\"h\":20,\"i\":\"11\"},\"id\":\"SMTP-Top20mail_from\",\"panelIndex\":\"11\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{\"vis\":{\"legendOpen\":false}},\"gridData\":{\"x\":0,\"y\":62,\"w\":24,\"h\":20,\"i\":\"12\"},\"id\":\"SMTP-Top20rcpt_to\",\"panelIndex\":\"12\",\"type\":\"visualization\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{\"columns\":[\"EveBox\",\"src_ip\",\"src_port\",\"proto\",\"dest_ip\",\"dest_port\",\"email.user_agent\",\"email.attachment\",\"email.x_originating_ip\"],\"sort\":[\"@timestamp\",\"desc\"]},\"gridData\":{\"x\":0,\"y\":121,\"w\":48,\"h\":35,\"i\":\"13\"},\"id\":\"SMTP-EventsList\",\"panelIndex\":\"13\",\"type\":\"search\",\"version\":\"6.4.1\"},{\"embeddableConfig\":{},\"gridData\":{\"x\":0,\"y\":0,\"w\":11,\"h\":12,\"i\":\"14\"},\"id\":\"8f89a9e0-c2f5-11e8-9eb1-af8fa48f4c1b\",\"panelIndex\":\"14\",\"type\":\"visualization\",\"version\":\"6.4.1\"}]", 
+        "refreshInterval": {
+            "pause": true, 
+            "value": 0
+        }, 
+        "timeFrom": "now-30d", 
+        "timeRestore": true, 
+        "timeTo": "now", 
+        "title": "SMTP", 
+        "version": 1
+    }, 
+    "type": "dashboard", 
+    "updated_at": "2019-10-06T09:51:34.720Z"
+}

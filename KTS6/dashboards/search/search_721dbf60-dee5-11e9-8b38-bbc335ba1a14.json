@@ -1,0 +1,25 @@
+{
+    "search": {
+        "columns": [
+            "src_ip", 
+            "dest_ip", 
+            "igmp.command", 
+            "igmp.max_resp_time", 
+            "igmp.muticast_address", 
+            "igmp.multicast_address"
+        ], 
+        "description": "", 
+        "hits": 0, 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"511545e0-dee0-11e9-8b38-bbc335ba1a14\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+        }, 
+        "sort": [
+            "@timestamp", 
+            "desc"
+        ], 
+        "title": "IGMP-EventsList", 
+        "version": 1
+    }, 
+    "type": "search", 
+    "updated_at": "2019-10-06T09:51:25.508Z"
+}

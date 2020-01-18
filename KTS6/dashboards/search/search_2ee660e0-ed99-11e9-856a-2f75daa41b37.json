@@ -1,0 +1,33 @@
+{
+    "search": {
+        "columns": [
+            "src_ip", 
+            "src_port", 
+            "proto", 
+            "dest_ip", 
+            "dest_port", 
+            "xmpp.action", 
+            "xmpp.change_session_state", 
+            "xmpp.from", 
+            "xmpp.id", 
+            "xmpp.session_type", 
+            "xmpp.to", 
+            "xmpp.type", 
+            "xmpp.version", 
+            "xmpp.xml:lang"
+        ], 
+        "description": "", 
+        "hits": 0, 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{\"index\":\"f69855b0-e5e9-11e9-8b38-bbc335ba1a14\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[]}"
+        }, 
+        "sort": [
+            "@timestamp", 
+            "desc"
+        ], 
+        "title": "XMPP-EventList", 
+        "version": 1
+    }, 
+    "type": "search", 
+    "updated_at": "2019-10-13T09:09:38.414Z"
+}

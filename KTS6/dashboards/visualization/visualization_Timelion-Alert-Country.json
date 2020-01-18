@@ -1,0 +1,17 @@
+{
+    "migrationVersion": {
+        "visualization": "6.7.2"
+    }, 
+    "type": "visualization", 
+    "updated_at": "2019-10-06T09:51:36.744Z", 
+    "visualization": {
+        "description": "", 
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": "{}"
+        }, 
+        "title": "Timelion-Alert-Country", 
+        "uiStateJSON": "{}", 
+        "version": 1, 
+        "visState": "{\"type\":\"timelion\",\"title\":\"Timelion-Alert-Country\",\"params\":{\"expression\":\".es(q=\\\"alert.signature.keyword:*\\\", split=\\\"geoip.country_name.keyword:10\\\").label(regex=\\\".*:([^\\\\s]+).*\\\",label=\\\"$1\\\")\",\"interval\":\"auto\"}}"
+    }
+}
