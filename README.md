@@ -16,7 +16,7 @@ EAGLE_EYE IDS
 # Competitors
 1. SecurityOnion
 2. Suricata
-3. Bro IDS
+3. Bro IDS/Zeek
 
 # Refs
 1. 
