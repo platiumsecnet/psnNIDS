@@ -34,6 +34,13 @@ Unstructured Search: Drill down to critical packet and flow data with our Elasti
 
 # Datasheet
 
+# Use cases
+1. Surface data exfiltration activities: Identify long-running sessions, “low and slow” sessions hidden in normal traffic, anomalous outbound network sessions, and other activities indicative of data exfiltration.
+2. Discover operational anomalies: Verify that you aren’t seeing protocols or traffic that you think you’ve blocked or traffic between systems that should be isolated from each other.
+3. Find hiding security threats: Catch security threats hiding in low-level chatty protocol like DNS, SNMP, or Kerberos.
+4. Detect botnets and beaconing: Identify traffic using anomalous ports. View malformed packet headers. Recognize command and control callbacks.
+5. Expose nuisance apps and bandwidth hogs: Discover when apps that are against corporate policy are being used. Find out who or what is taking up the most bandwidth.
+6. See where your network traffic is going: Identify outbound IP and URL destinations and classify traffic by ingress, egress or lateral motion in your network.
 
 # Competitors
 _*OpenSource*_
