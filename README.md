@@ -45,14 +45,13 @@ Unstructured Search: Drill down to critical packet and flow data with our Elasti
 # Competitors
 _*OpenSource*_
 1. Suricata
-2. Bro IDS/Zeek
-3. https://logrhythm.com/products/logrhythm-netmon-freemium/
+2. https://logrhythm.com/products/logrhythm-netmon-freemium/
 
 _*Commercial*_
 1. SecurityOnion
 2. Waterfall IDS: https://waterfall-security.com/waterfall-for-ids/
 3. NIKSUN NetDetector: https://www.niksun.com/product.php?id=112
-
+4. Bro IDS/Zeek
 
 # Refs
 1. https://gallery.logrhythm.com/data-sheets/logrhythm-netmon-data-sheet.pdf
