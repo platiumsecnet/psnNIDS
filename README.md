@@ -1,6 +1,16 @@
 EAGLE_EYE IDS
 ---
 
+# Advantages
+1. Detect Advanced Network Threats: Surface even the most advanced threats in real time with application recognition, customizable Deep Packet Analytics, and multidimensional network traffic and behavioral analytics <br>
+- Detect even the most sophisticated threats across a broad set of IT environment-generated log and audit data, endpoint activity, and Layer 7 application flow
+- Recognize data exfiltration, spear phishing, botnet beaconing, inappropriate network usage, lateral movement, and suspicious file transfers
+- Corroborate high-risk events at the network or application level with environmental activity from your SIEM
+2. Take the Guesswork out of Incident Response: Enable your incident response team to work effectively and efficiently with unstructured search, session playback, and file reconstruction.<br>
+- Determine the scope of the incident and understand exactly which systems have been compromised
+- Generate irrefutable network-based evidence
+- Reconstruct files transferred across the network to investigate suspicious data exfiltration, malware infiltration, and unauthorized data access
+
 # Features
 1. True Application Identification: Automatically identify over 3,000 applications to expedite network forensics with advanced classification methods and deep packet inspection.
 2. SmartFlow™ Session Classification: Recover Layer 7 application details and packet data for all sessions.
@@ -12,8 +22,6 @@ Unstructured Search: Drill down to critical packet and flow data with our Elasti
 7. Alerts & Dashboards: Surface continuous, automated analysis on saved searches through customizable analyst dashboards.
 8. API Integration: Provide third-party tools access to session-based packet captures and reconstructed files.
 
-# Advantages
-
 # Supported Data Types
 1. Alert Data: HIDS alerts from Wazuh and NIDS alerts from Snort/Suricata
 2. Asset Data: Asset Data from Bro
@@ -23,6 +31,8 @@ Unstructured Search: Drill down to critical packet and flow data with our Elasti
 6. Transaction data: http/ftp/dns/ssl/other logs from Bro
 
 # Hardware Requirements
+
+# Datasheet
 
 
 # Competitors
@@ -38,4 +48,6 @@ _*Commercial*_
 
 
 # Refs
-1. 
+1. https://gallery.logrhythm.com/data-sheets/logrhythm-netmon-data-sheet.pdf
+2. 
+
