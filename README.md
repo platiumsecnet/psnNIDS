@@ -1,4 +1,4 @@
-# eagle_eye
+# Eagle_Eye Supported Protocols
 Platiumsecnet IDS &amp; Security Monitoring solution
 
 # 1. Physical Layer
