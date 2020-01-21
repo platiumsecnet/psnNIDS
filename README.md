@@ -13,6 +13,9 @@ EAGLE_EYE IDS
 5. Session data: Session data from Bro
 6. Transaction data: http/ftp/dns/ssl/other logs from Bro
 
+# Hardware Requirements
+
+
 # Competitors
 1. SecurityOnion
 2. Suricata
