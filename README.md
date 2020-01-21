@@ -21,6 +21,7 @@ EAGLE_EYE IDS
 2. Suricata
 3. Bro IDS/Zeek
 4. NIKSUN NetDetector: https://www.niksun.com/product.php?id=112
+5. Waterfall IDS: https://waterfall-security.com/waterfall-for-ids/
 
 # Refs
 1. 
