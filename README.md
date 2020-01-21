@@ -20,6 +20,7 @@ EAGLE_EYE IDS
 1. SecurityOnion
 2. Suricata
 3. Bro IDS/Zeek
+4. NIKSUN NetDetector: https://www.niksun.com/product.php?id=112
 
 # Refs
 1. 
