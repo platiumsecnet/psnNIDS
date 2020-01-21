@@ -55,5 +55,6 @@ _*Commercial*_
 
 # Refs
 1. https://gallery.logrhythm.com/data-sheets/logrhythm-netmon-data-sheet.pdf
-2. 
+2. http://doc.haka-security.org/haka/release/v0.3.0/doc/developer/arch.html
+3. 
 
