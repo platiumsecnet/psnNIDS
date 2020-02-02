@@ -30,6 +30,8 @@ Unstructured Search: Drill down to critical packet and flow data with our Elasti
 5. Session data: Session data from Bro
 6. Transaction data: http/ftp/dns/ssl/other logs from Bro
 
+# Screenshots
+
 # Hardware Requirements
 
 # Datasheet
