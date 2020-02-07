@@ -16,7 +16,7 @@
 
 3. Detect unknown attack by analysis-driven NIDS 
 
-- Using DPI to discover extract session data, transaction data of over 3000 applications in home, office, industrial control enviroments: Web services, VoIP, Instant message and chat, gaming, streaming, mobile, file transferring, remote access, industrial control protocols. This feature allows to find threat embbeded in normal protocols
+- Using DPI to discover and extract asset, session, transaction data of over 3000 applications in home, office, industrial control enviroments: Web services, VoIP, Instant message and chat, gaming, streaming, mobile, file transferring, remote access, industrial control protocols. This feature allows to find threat embbeded in normal protocols
 
 4. Powerful analysis framework
 
