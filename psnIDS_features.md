@@ -12,9 +12,11 @@
 
 - Automaticaly update rules for newest security cases from trursted and experienced sources
 
-3. Detect unknown attack by analysis-driven NIDS 
+3. Detect 0-day attack by analysis-driven NIDS 
 
-- Using DPI to discover and extract asset, session, transaction data of over 3000 applications in home, office, industrial control enviroments: Web services, VoIP, Instant message and chat, gaming, streaming, mobile, file transferring, remote access, industrial control protocols. This feature allows to find threat embbeded in normal protocols
+- Using DPI to extract asset, session, transaction data of all activities in networks. This data will be used to reconstruct context of activities to find out 0-day attack
+
+- Using DPI to discover of over 3000 applications in home, office, industrial control enviroments: Web services, VoIP, Instant message and chat, gaming, streaming, mobile, file transferring, remote access, industrial control protocols. 
 
 - Automatically capture files as they pass through your network and automatically pass them to a sandbox or a file share for antivirus scanning
 
