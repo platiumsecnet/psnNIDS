@@ -6,17 +6,19 @@
 
 - Automatically purging out-of-date captured files when the disk reaches threshold usage
 
-2. Rule-driven NIDS:
+2. Detect well-known attack by rule-driven NIDS:
 
 - Detect exactly events of known malicious, anomalous or otherwise suspicious traffic based on rich rule set which covers most of critical security cases
 
-- Using DPI to discover apprearance and recovery session over 3000 applications which are popuplar in home, office, industrial control enviroments: Web services, VoIP, Instant message and chat, gaming, streaming, mobile, file transferring, remote access, industrial control protocols 
-
-- Automatically extract attached files, metadata around context of events to forensic
-
 - Automaticaly update rules for newest security cases from trursted and experienced sources
 
-3. Powerful analysis framework
+- Automatically extract attached files, metadata around context of events to validate
+
+3. Detect unknown attack by analysis-driven NIDS 
+
+- Using DPI to discover extract session data, transaction data of over 3000 applications in home, office, industrial control enviroments: Web services, VoIP, Instant message and chat, gaming, streaming, mobile, file transferring, remote access, industrial control protocols. This feature allows to find threat embbeded in normal protocols
+
+4. Powerful analysis framework
 
 - Alert continuously and impressively of events on dashboard 
 
