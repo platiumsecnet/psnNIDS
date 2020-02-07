@@ -26,7 +26,9 @@
 
 - Fastly and easily pivot from an alert to its context (pcap files, extracted files, flow and session information ...) with powerful analysis tools
 
-- Query all captured packets to correlate traffic that may not have triggered any alerts but still could be associated with malicious or undesired activity  
+- Query all captured packets to correlate traffic that may not have triggered any alerts but still could be associated with malicious or undesired activity 
+
+- Support multi-tier architecture for analysis: allows collaboration among analysts by allowing alerts to be commented on and escalated to more senior analysts who can take action on the alerts
 
 - Optimize the time for analyzing by a suite of convinient tools: reverse DNS and whois lookups of IP by Sguil; geo-IP mapping by Squert; visualize in charts, tables, maps by Kibana
 
