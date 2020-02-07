@@ -32,3 +32,4 @@
 
 - Optimize the time for analyzing by a suite of convinient tools: reverse DNS and whois lookups of IP by Sguil; geo-IP mapping by Squert; visualize in charts, tables, maps by Kibana
 
+- Support web-based interface
