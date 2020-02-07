@@ -12,11 +12,11 @@
 
 - Automaticaly update rules for newest security cases from trursted and experienced sources
 
-- Automatically extract attached files, metadata around context of events to validate
-
 3. Detect unknown attack by analysis-driven NIDS 
 
 - Using DPI to discover and extract asset, session, transaction data of over 3000 applications in home, office, industrial control enviroments: Web services, VoIP, Instant message and chat, gaming, streaming, mobile, file transferring, remote access, industrial control protocols. This feature allows to find threat embbeded in normal protocols
+
+- Automatically capture files as they pass through your network and automatically pass them to a sandbox or a file share for antivirus scanning
 
 4. Powerful analysis framework
 
