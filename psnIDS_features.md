@@ -20,7 +20,9 @@
 
 - Alert continuously and impressively of events on dashboard 
 
-- Fastly and easily pivot from an alert to it context (pcap files, extracted files, flow and session information ...) with powerful analysis tools
+- Fastly and easily pivot from an alert to its context (pcap files, extracted files, flow and session information ...) with powerful analysis tools
+
+- Query all captured packets to correlate traffic that may not have triggered any alerts but still could be associated with malicious or undesired activity  
 
 
 
