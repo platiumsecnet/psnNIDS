@@ -16,7 +16,7 @@
 
 - Using DPI to extract asset, session, transaction data of all activities in networks. This data will be used to reconstruct context of activities to find out 0-day attack
 
-- Discover of over 3000 applications in home, office, industrial control enviroments: Web services, VoIP, Instant message and chat, gaming, streaming, mobile, file transferring, remote access, industrial control protocols. 
+- Discover of over 3000 applications in home, office, industrial control network enviroments: Web services, VoIP, Instant message and chat, gaming, streaming, mobile, file transferring, remote access, industrial control protocols. 
 
 - Automatically capture files as they pass through your network and automatically pass them to a sandbox or a file share for antivirus scanning
 
