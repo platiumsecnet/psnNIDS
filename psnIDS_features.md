@@ -29,8 +29,6 @@
 
 # 6. Operating System Support
 Linux
-FreeBSD
-OpenBSD
 macOS / Mac OS X
 Windows
 
@@ -58,3 +56,22 @@ Windows
 - per rule alert filtering and thresholding
 - global alert filtering and thresholding
 - per host/subnet thresholding and rate limiting settings
+
+# 12. Outputs
+- Eve log, all JSON alert and event output
+- Lua output scripts for generating your own output formats
+- Redis support
+- HTTP request logging
+- TLS handshake logging
+- Unified2 output — compatible with Barnyard2
+- Alert fast log
+- Alert debug log — for rule writers
+- Traffic recording using pcap logger
+- Prelude support
+- syslog — alert to syslog
+- stats — engine stats at fixed intervals
+- File logging including MD5 checksum in JSON format
+- Extracted file storing to disk, with deduplication in the v2 format
+- DNS request/reply logger, including TXT data
+- Signal based Log rotation
+- Flow logging
