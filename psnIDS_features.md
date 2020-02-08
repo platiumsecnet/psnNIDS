@@ -42,7 +42,8 @@ Windows
 - HTTP, SSL, TLS, SMB, DCERPC, SMTP, FTP, SSH, DNS, Modbus, ENIP/CIP, DNP3, NFS, NTP, DHCP, TFTP, KRB5, IKEv2, SIP, SNMP, RDP
 - New protocols developed in the Rust language, for safe and fast decoding.
 
-# 8. Very high-speed Processing
+# 8. Multi-thread & Dominated cores for Very high-speed Processing
+- Support upto 3Gbps version
 
 # 9. IP Reputation
 - loading of large amounts host based reputation data
